@@ -1,0 +1,361 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+}
+#container {
+    width: 80%;
+}
+
+header {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    background-color: #0a0a0a;
+    height: 90px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(248, 249, 252);
+}
+
+#logo {
+    width: 20%;
+}
+
+#logo img{
+    width: 50%;
+    height: 100%;
+}
+
+#nav{
+    width: 70%;
+  
+}
+
+nav ul{
+    margin-top: 20px;
+    list-style: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(247, 245, 245);
+    margin: 10px;
+    background-color: #060606;
+    
+}
+
+#hamburguer{
+    display: none;
+}
+
+
+
+
+
+/* CONTENIDO */
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#info {
+    width: 55%;
+    margin: 0 15px;
+}
+
+#info #banner img{
+    width: 100%;
+    
+}
+
+#barral {
+    width: 40%;
+    margin: 0;
+    background-color: #ffffff;
+
+}
+
+#text{
+    justify-content: space-between;
+    margin-top: 20px;
+    display: flex;
+  
+}  
+
+#text h1{
+ margin: 0;
+ width: 35%;
+ font-size: 65px;
+ font-weight: 600;
+color: #ccc;
+}
+
+
+
+#text #descripcion{
+  margin:  0;
+  width: 70%;
+  color: azure;
+}
+
+#text #descripcion input{
+    background-color: black;
+    padding: 15px 30px;
+    color: #ccc;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+#text h2{
+    margin: 0;
+    width: 50%;
+    font-size: 40px;
+    font-weight: 600;
+    color: #edebf0;
+   }
+
+#text #descripcion-2{
+    margin:  0;
+    width: 60%;
+    color: #ccc;
+  }
+
+  #text #descripcion-2 input{
+    background-color: black;
+    padding: 15px 30px;
+    color: #ccc;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+
+
+#content #banner img {
+    width: 100%;
+}
+
+
+
+
+#barral {
+    background-color: #000000;
+    color: rgb(253, 253, 253);
+    padding: 20px;
+    border-width: 1px;
+   border-style: solid;
+   border-color: rgb(255, 255, 255);
+}
+
+#barral-2 {
+    background-color: #000000;
+    width: 100%;
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    border-width: 1px;
+   border-style: solid;
+   border-color: rgb(255, 255, 255);
+}
+
+#barral h1 {
+    margin-bottom: 40px;
+   color: #ffffff;
+}
+
+#barral #cards .card {
+    margin: 20px 0;
+    margin-top: 10%;
+    border-bottom: 1px solid #ffffff;
+    background-color: #000000;
+}
+
+
+#menu-h{
+    display: block;
+    position: absolute;
+    right: 30px;
+    z-index: 20px;
+}
+
+footer {
+   margin-top: 40px;
+   margin-bottom: 40px;
+  }
+
+  footer .tarjeta{
+    display: flex; 
+  }
+
+  footer .tarjeta-2{
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .tarjeta .infopie img{
+    width:30%;
+    margin-right: 15px;
+  }
+
+  .tarjeta-2 .infopie-2 img{
+    width:40%;
+    margin-right: 15px;
+  }
+
+  .tarjeta .infopie{
+    display: flex;
+    margin-right: 15px;
+    padding-right: 100PX;
+    justify-content: space-between;
+    background-color: #040430;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(252, 249, 249);
+  }
+
+  .tarjeta-2 .infopie-2{
+    display: flex;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding-right: 100PX;
+    width: 80%;
+    background-color: #040430;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(252, 249, 249);
+  }
+  
+  .tarjeta .infopie .textos{
+    width: 75%;
+    color: #ccc;
+  }
+
+  .tarjeta-2 .infopie-2 .textos{
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+  }
+
+  .image-description {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-description img {
+    max-width: 100px;
+    margin-right: 10px;
+  }
+  
+  .image-description p {
+    margin: 0;
+
+  }
+  #hamburguer{
+    display: none;
+  }
+ 
+  
+
+
+@media(max-width:480px){
+    nav{
+        position: absolute;
+        background-color: rgb(9, 5, 61);
+        height: 1000px;
+        top: 15%;
+        right: 0;
+        width: 70%;
+        color: #ccc;
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: left;
+        margin-top: 30px;
+        margin-right: 30%;
+    }
+
+    nav ul li{
+        margin: 20px 0px;
+    }
+
+    #menu{
+      display: none;
+    }
+
+    #hamburguer{
+        display: block;
+        position: absolute;
+        z-index: 20;
+        top:5%;
+        right: 10%;
+        width: 15%;
+    }
+    header #menu{
+        top: 0%;
+    }
+
+    header #menu ul{
+        margin-top: 30%;
+    }
+
+    header{
+        margin-top: 10px;
+    }
+    
+    #logo{
+        margin: 0;
+    }
+
+    #logo img{
+        width: 80%;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #info{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #barral{
+        width: 100%;
+    }
+    #tarjetas{
+        flex-direction: column;
+       
+    }
+    
+    #tarjetas-2{
+        flex-direction: column;
+        margin-left: 1%;
+        margin-right: 20%;
+    }
+
+    .tarjeta{
+        flex-direction: column;
+    }
+    
+    .infopie{
+        margin-bottom: 10%;
+    }
+
+    #text{
+        flex-direction: column;
+    }
+
+    #text h2{
+        width: 100%;
+    }
+
+    #text #descripcion{
+        width: 100%;
+    }
+}
